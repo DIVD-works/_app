@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../widgets/empty-screen.dart';
 import '../widgets/button2.dart';
-import '../pages/vragen.dart';
+import '../pages/vragenpage.dart';
 
 class StartPage extends StatelessWidget {
   @override
@@ -27,7 +27,7 @@ class StartPage extends StatelessWidget {
                       fontFamily: 'Arial',  
                     ),
                   ),
-                  SizedBox(height: 5), 
+                  SizedBox(height: MediaQuery.of(context).size.height * 0.005,), 
                   Text(
                     'ready for your',
                     style: TextStyle(
@@ -37,7 +37,7 @@ class StartPage extends StatelessWidget {
                       fontFamily: 'Arial',  
                     ),
                   ),
-                  SizedBox(height: 5),  
+                  SizedBox(height: MediaQuery.of(context).size.height * 0.005,),  
                   Text(
                     'internship?',
                     style: TextStyle(
@@ -50,7 +50,7 @@ class StartPage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 40),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.04,),
             Center(
                 child: Button2(
                   text: "Start",

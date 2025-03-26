@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'button.dart';
 import '../pages/startpage.dart';
+import '../pages/profilepage.dart';
 
 class ScaffoldPage extends StatelessWidget {
   final Widget child;
@@ -55,7 +56,10 @@ class ScaffoldPage extends StatelessWidget {
                 Button(
                   icon: Icons.person_2_outlined,
                   onPressed: () {
-                    print("Profile button pressed");
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ProfilePage()), 
+                    );
                   },
                 ),
               ],
