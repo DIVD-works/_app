@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'button.dart';
+import '../pages/startpage.dart';
 
 class ScaffoldPage extends StatelessWidget {
   final Widget child;
@@ -39,7 +40,10 @@ class ScaffoldPage extends StatelessWidget {
                 Button(
                   icon: Icons.home_outlined,
                   onPressed: () {
-                    print("Home button pressed");
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => StartPage()), 
+                    );
                   },
                 ),
                 Button(

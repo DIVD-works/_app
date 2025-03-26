@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import '../widgets/empty-screen.dart';
-import '../widgets/button2.dart';
-import '../pages/vragen.dart';
+import '../widgets/textfield.dart'; 
 
-class StartPage extends StatelessWidget {
+class VragenPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScaffoldPage(
@@ -19,51 +18,44 @@ class StartPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,  
                 children: [
                   Text(
-                    'Welcome',
+                    'Here are a few',
                     style: TextStyle(
-                      fontSize: 48,
+                      fontSize: 24,
                       fontWeight: FontWeight.bold,
                       color: Color(0xFFFFC736),
                       fontFamily: 'Arial',  
                     ),
                   ),
-                  SizedBox(height: 5), 
+                  SizedBox(height: MediaQuery.of(context).size.height * 0.005,), 
                   Text(
-                    'ready for your',
+                    'questions',
                     style: TextStyle(
-                      fontSize: 48,
+                      fontSize: 24,
                       fontWeight: FontWeight.bold,
                       color: Color(0xFFFFC736),
                       fontFamily: 'Arial',  
                     ),
                   ),
-                  SizedBox(height: 5),  
+                  SizedBox(height: MediaQuery.of(context).size.height * 0.03,),  
                   Text(
-                    'internship?',
+                    'What is your full name',
                     style: TextStyle(
-                      fontSize: 48,
+                      fontSize: 24,
                       fontWeight: FontWeight.bold,
                       color: Color(0xFFFFC736),
                       fontFamily: 'Arial',  
                     ),
                   ),
+                  SizedBox(height: MediaQuery.of(context).size.height * 0.6,),  
+                 ITextField(
+                    width: MediaQuery.of(context).size.width * 0.8,
+                    height: MediaQuery.of(context).size.height * 0.05,
+                    hintText: "Type here",
+                    controller: TextEditingController(),
+                  )
                 ],
               ),
             ),
-            SizedBox(height: 40),
-            Center(
-                child: Button2(
-                  text: "Start",
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => VragenPage()), 
-                    );
-                  },
-                  width: 100.0,
-                  height: 50,
-                ),
-              )
           ],
         ),
       ),
