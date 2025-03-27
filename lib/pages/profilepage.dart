@@ -4,6 +4,8 @@ import '../widgets/button2.dart';
 import '../pages/vragenpage.dart';
 
 class ProfilePage extends StatelessWidget {
+  const ProfilePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
@@ -24,8 +26,13 @@ class ProfilePage extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
+                      CircleAvatar(
+                        radius: 40,
+                        backgroundImage: AssetImage('lib/img/Liam.png'),
+                      ),
+                      SizedBox(width: 10),
                       Padding(
-                        padding: EdgeInsets.only(left: responsivePadding),
+                        padding: EdgeInsets.only(left: responsivePadding - 90),
                         child: Text(
                           'Liam Plokkaar',
                           style: TextStyle(

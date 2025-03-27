@@ -3,6 +3,8 @@ import '../widgets/empty-screen.dart';
 import '../widgets/textfield.dart'; 
 
 class VragenPage extends StatelessWidget {
+  const VragenPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return ScaffoldPage(

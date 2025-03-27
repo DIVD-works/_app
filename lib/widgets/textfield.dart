@@ -8,13 +8,13 @@ class ITextField extends StatefulWidget {
   final bool obscureText;
 
   const ITextField({
-    Key? key,
+    super.key,
     this.width = 300,
     this.height = 50,
     required this.hintText,
     this.controller,
     this.obscureText = false,
-  }) : super(key: key);
+  });
 
   @override
   _ITextFieldState createState() => _ITextFieldState();

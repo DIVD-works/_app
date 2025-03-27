@@ -6,7 +6,7 @@ import '../pages/profilepage.dart';
 class ScaffoldPage extends StatelessWidget {
   final Widget child;
 
-  ScaffoldPage({required this.child});
+  const ScaffoldPage({super.key, required this.child});
 
   @override
   Widget build(BuildContext context) {

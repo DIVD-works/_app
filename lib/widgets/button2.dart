@@ -8,13 +8,13 @@ class Button2 extends StatelessWidget {
   final Color borderColor; 
 
   const Button2({
-    Key? key,
+    super.key,
     required this.text, 
     required this.onPressed,
     this.width = 200.0,  
     this.height = 50.0,  
     this.borderColor = const Color(0xFFE8A200), 
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

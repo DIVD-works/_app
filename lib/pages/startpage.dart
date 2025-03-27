@@ -4,6 +4,8 @@ import '../widgets/button2.dart';
 import '../pages/vragenpage.dart';
 
 class StartPage extends StatelessWidget {
+  const StartPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return ScaffoldPage(
