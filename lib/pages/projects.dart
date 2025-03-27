@@ -50,7 +50,7 @@ class ProjectPage extends StatelessWidget {
             SizedBox(height: MediaQuery.of(context).size.height * 0.04,),
             Center(
               child: Button2(
-                text: "Cybersecurity",
+                text: "Java Api Intergration",
                 onPressed: () {
                   print('Button Pressed!');
                 },
@@ -65,7 +65,7 @@ class ProjectPage extends StatelessWidget {
             SizedBox(height: MediaQuery.of(context).size.height * 0.04,),
             Center(
               child: Button2(
-                text: "Cybersecurity",
+                text: "Arch Linux Basics",
                 onPressed: () {
                   print('Button Pressed!');
                 },
@@ -80,7 +80,7 @@ class ProjectPage extends StatelessWidget {
             SizedBox(height: MediaQuery.of(context).size.height * 0.04,),
             Center(
               child: Button2(
-                text: "Cybersecurity",
+                text: "SQL PHP Database",
                 onPressed: () {
                   print('Button Pressed!');
                 },
