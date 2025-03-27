@@ -52,7 +52,7 @@ class StartPage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: MediaQuery.of(context).size.height * 0.04,),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.15,),
             Center(
                 child: Button2(
                   text: "Start",
@@ -62,8 +62,12 @@ class StartPage extends StatelessWidget {
                       MaterialPageRoute(builder: (context) => VragenPage()), 
                     );
                   },
-                  width: 100.0,
-                  height: 50,
+                width: MediaQuery.of(context).size.width * 0.3,
+                height: MediaQuery.of(context).size.height * 0.06,
+                style: TextStyle(
+                  fontSize: 20.0, 
+                  fontWeight: FontWeight.bold, 
+                  ),
                 ),
               )
           ],

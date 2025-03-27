@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'button.dart';
 import '../pages/startpage.dart';
 import '../pages/profilepage.dart';
+import '../pages/projects.dart';
 
 class ScaffoldPage extends StatelessWidget {
   final Widget child;
@@ -50,7 +51,10 @@ class ScaffoldPage extends StatelessWidget {
                 Button(
                   icon: Icons.chat_bubble_outline_rounded,
                   onPressed: () {
-                    print("Chat button pressed");
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ProjectPage()), 
+                    );
                   },
                 ),
                 Button(

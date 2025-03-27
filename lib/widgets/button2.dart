@@ -6,6 +6,7 @@ class Button2 extends StatelessWidget {
   final double width;
   final double height;
   final Color borderColor; 
+  final TextStyle style; 
 
   const Button2({
     super.key,
@@ -14,6 +15,7 @@ class Button2 extends StatelessWidget {
     this.width = 200.0,  
     this.height = 50.0,  
     this.borderColor = const Color(0xFFE8A200), 
+    required this.style, 
   });
 
   @override
@@ -38,10 +40,7 @@ class Button2 extends StatelessWidget {
           child: Center(
             child: Text(
               text,
-              style: TextStyle(
-                fontFamily: 'Arial',  
-                color: Colors.black, 
-              ),
+              style: style, 
             ),
           ),
         ),

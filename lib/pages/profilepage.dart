@@ -104,8 +104,12 @@ class ProfilePage extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => VragenPage()), 
                   );
                 },
-                width: 100.0,
-                height: 50,
+                width: MediaQuery.of(context).size.width * 0.8,
+                height: MediaQuery.of(context).size.height * 0.05,
+                style: TextStyle(
+                  fontSize: 20.0, 
+                  fontWeight: FontWeight.bold, 
+                ),
               ),
             ),
           ],
