@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../widgets/empty-screen.dart';
 import '../widgets/button2.dart';
+import './cybersecurity.dart';
 
 class ProjectPage extends StatelessWidget {
   const ProjectPage({super.key});
@@ -37,7 +38,10 @@ class ProjectPage extends StatelessWidget {
               child: Button2(
                 text: "Cybersecurity",
                 onPressed: () {
-                  print('Button Pressed!');
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => CybersecurityPage()), 
+                  );
                 },
                 width: MediaQuery.of(context).size.width * 0.8,
                 height: MediaQuery.of(context).size.height * 0.07,
