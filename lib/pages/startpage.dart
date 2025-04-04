@@ -16,7 +16,7 @@ class StartPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center, 
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 20.0),
+              padding: const EdgeInsets.only(top: 5.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,  
                 children: [

@@ -22,49 +22,56 @@ class ScaffoldPage extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: Color(0xFF1E1E1E),
-      body: Column(
+      body: Stack(
         children: [
-          child,
-          Spacer(),  
           Padding(
-            padding: EdgeInsets.only(bottom: verticalPadding),
-            child: Container(
-              width: containerWidth,  
-              height: containerHeight,
-              color: Color(0xFFFFC736),
-            ),
+            padding: EdgeInsets.only(bottom: verticalPadding + containerHeight),
+            child: child, 
           ),
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: horizontalPadding),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
               children: [
-                Button(
-                  icon: Icons.home_outlined,
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => StartPage()), 
-                    );
-                  },
+                Container(
+                  width: containerWidth,  
+                  height: containerHeight,
+                  color: Color(0xFFFFC736),
                 ),
-                Button(
-                  icon: Icons.chat_bubble_outline_rounded,
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => ProjectPage()), 
-                    );
-                  },
-                ),
-                Button(
-                  icon: Icons.person_2_outlined,
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => ProfilePage()), 
-                    );
-                  },
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: horizontalPadding),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Button(
+                        icon: Icons.home_outlined,
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => StartPage()), 
+                          );
+                        },
+                      ),
+                      Button(
+                        icon: Icons.chat_bubble_outline_rounded,
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => ProjectPage()), 
+                          );
+                        },
+                      ),
+                      Button(
+                        icon: Icons.person_2_outlined,
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => ProfilePage()), 
+                          );
+                        },
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
